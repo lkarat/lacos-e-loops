@@ -17,16 +17,31 @@ function acertarNumero() {
 
 function imprimirNumeros() {
 
-    let incremental = 0
+    let numeroDousuario = +prompt("Escreva um number:")
 
-    for (let i = +prompt("Escreva um number:"); incremental <= i; incremental++) {
 
-        console.log(incremental);
+    for (i = 0; i <= numeroDousuario; i++) {
+
+        console.log(i);
 
     }
 
 }
-imprimirNumeros()
+
+function listar() {
+    let lista=["zero","um","dois","tres","quatro","cinco","seis"]
+
+    for(let i=0; i<lista.length; i++){
+
+console.log(`O elemento de índice ${i} é ${lista[i]}`);
+
+    }
+
+}
+listar()
+
+
+
 
 
 
