@@ -15,7 +15,18 @@ function acertarNumero() {
 
 }
 
+function imprimirNumeros() {
 
+    let incremental = 0
+
+    for (let i = +prompt("Escreva um number:"); incremental <= i; incremental++) {
+
+        console.log(incremental);
+
+    }
+
+}
+imprimirNumeros()
 
 
 
