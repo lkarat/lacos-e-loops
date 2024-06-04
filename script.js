@@ -1,13 +1,13 @@
 
 
 function acertarNumero() {
-    let i = +prompt("escreva um número")
+    let nUsuario = +prompt("escreva um número")//Nesse caso, o nUsuario serve para receber o número do usuário
     let soma = 0
 
-    while (i != 0) {
+    while (nUsuario != 0) {
 
-        soma = soma + i
-        i = +prompt("escreva um número")
+        soma = soma + nUsuario
+        nUsuario = +prompt("escreva um número")
 
     }
 
@@ -20,7 +20,7 @@ function imprimirNumeros() {
     let numeroDousuario = +prompt("Escreva um number:")
 
 
-    for (i = 0; i <= numeroDousuario; i++) {
+    for (let i = 0; i <= numeroDousuario; i++) {
 
         console.log(i);
 
@@ -28,17 +28,54 @@ function imprimirNumeros() {
 
 }
 
+
 function listar() {
-    let lista=["zero","um","dois","tres","quatro","cinco","seis"]
+    let lista = ["zero", "um", "dois", "tres", "quatro", "cinco", "seis"]
 
-    for(let i=0; i<lista.length; i++){
+    for (let i = 0; i < lista.length; i++) {
 
-console.log(`O elemento de índice ${i} é ${lista[i]}`);
+        console.log(`O elemento de índice ${i} é ${lista[i]}`);
 
     }
 
 }
-listar()
+
+function lerNotas() {
+
+    const notasDoano = [
+        [8, 6, 9, 2],
+        [7, 5, 4, 8],
+        [2, 3, 8, 9],
+        [7, 1, 9, 8]
+    ]
+    let soma=0
+    ;
+    for(let nBimestre=0; nBimestre<notasDoano.length; nBimestre++) {
+        for(notas=0; notas<notasDoano[nBimestre].length;notas++){
+            console.log(notasDoano[nBimestre][notas]);
+
+            soma = soma + notasDoano[nBimestre][notas]
+            
+            /*console.log(`A soma do bimestre .... é... a média do bimestre .... é ...`);*/
+            
+        }
+        
+        
+        
+        console.log(soma)
+        
+    }
+        
+
+
+}
+
+
+lerNotas()
+
+
+
+
 
 
 
