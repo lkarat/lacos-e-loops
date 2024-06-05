@@ -76,8 +76,25 @@ function lerNotasForIn() {
     }
 }
 
-lerNotasForIn()
+function lerNotasForOf() {
+    const notasDoano = [
+        [8, 6, 9, 2],
+        [7, 5, 4, 8],
+        [2, 3, 8, 9],
+        [7, 1, 9, 8]
+    ]
+    let soma = 0;
+    for (let nBimestre in notasDoano) {
+        for (let notas of notasDoano[nBimestre]) {
+            console.log(notas);
 
+            soma += notas
+        }
+        console.log(`A soma das notas do bimestre ${+nBimestre + 1} é: ${soma} e a média do bimestre ${+nBimestre + 1} é ${soma / notasDoano[nBimestre].length}`);
+        soma = 0
+    }
+}
+lerNotasForOf()
 
 
 
